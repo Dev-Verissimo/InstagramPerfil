@@ -15,37 +15,168 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
-:root{
-  
+*{
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	text-decoration: none;
+	color: #262626;
+	box-sizing: border-box;
+
 }
+
 
 /*BODY*/
 body{
 
+	margin: 0 auto;
+	/* max-width: 1000px; */
+	font-family: Helvetica, Arial, sans-seri;
+	background-color: #ebe9e95d;
+	
 }
 
+
+
 /*TOPO*/
-header{
-	
+#header{
+	/* height: 10vh; */
+	min-width: 60px;
+	width: 100vw;
+
+	/* padding: 20px 204px 3px; */
+	background-color: white;
+
+	border-bottom: #26262610 solid 2px;
+
+}
+
+#header img{
+	padding-left: 30%;
 }
 
 /*RODAPÉ*/
-footer{
+/* footer{
 
-}
+} */
 
 /*PÁGINA INICIAL*/
 main{
-	
+	padding: 20px;
+	margin: 0 auto;
+	max-width: 935px;
+
 }
 	main .profile-content{
+		padding: 0 10vw;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
 
+		
+	}
+
+	.profile-content  img {
+		border-radius: 80px;
+		margin-right: 80px;
 	}
 
 	main .highlighted-stories{
+		height: 100px;
+		padding: 10px;
+		box-sizing: border-box;
+		margin-bottom: 40px;
+		/* background-color: blue; */
 
+	}
+
+	.highlighted-stories ul {
+		display: flex;
+		justify-content: flex-end;
+		flex-flow: row-reverse;
+	}
+	.highlighted-stories ul li {
+		/* border: 2px gray solid;
+		border-radius: 50px; */
+		min-width: 77px;
+		margin-right: 20px;
+		text-align: center;
+	}
+
+	.highlighted-stories ul img{
+		width: 50px;
+		border-radius: 50px;
+		border: 2px rgba(128, 128, 128, 0.219) solid;
+		border-radius: 50px;
+		padding: 4px;
+	}
+
+	#new {
+		margin: 8px;
+		/* padding: 1px; */
+		width: 35px;
+	}
+
+	.highlighted-stories ul figure {
+		padding: 0 auto;
 	}
 
 	main .profile-posts{
 
+	}
+
+	main .profile-posts nav{
+		border-top: #26262627 2px solid;
+		text-align: center;
+		height: 100px;
+		
+
+	}
+
+	main .profile-posts nav a{
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 10px;
+		width: 80px;
+		border: 2px solid transparent;
+		
+		transition: all 0.5s;
+	}
+	main .profile-posts nav a:hover:focus{
+		border-top: 2px solid rgb(15, 5, 58);
+	}
+
+	
+
+
+	.profile-data{
+		display: flex;
+		justify-content: space-between;
+
+		
+	}
+
+	.profile-data span{
+		font-weight: bold;
+	}
+
+
+
+	.profile-posts > ul {
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	/* .profile-posts li{
+		margin: 3px;
+	} */
+
+	.profile-posts > ul li figure img {
+		width: 293px;
+		height: 293px;
+
+		padding: 7px;
 	}
