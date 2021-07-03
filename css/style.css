@@ -73,7 +73,7 @@ main{
 		padding: 0 10vw;
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
+		/* justify-content: space-between; */
 
 		
 	}
@@ -81,6 +81,11 @@ main{
 	.profile-content  img {
 		border-radius: 80px;
 		margin-right: 80px;
+		flex-shrink: 1;
+	}
+	
+	.profile-info{
+		max-width: 300px;
 	}
 
 	main .highlighted-stories{
@@ -123,9 +128,9 @@ main{
 		padding: 0 auto;
 	}
 
-	main .profile-posts{
+	/* main .profile-posts{
 
-	}
+	} */
 
 	main .profile-posts nav{
 		border-top: #26262627 2px solid;
@@ -170,7 +175,7 @@ main{
 		flex-flow: row wrap;
 		justify-content: center;
 	}
-
+	
 	/* .profile-posts li{
 		margin: 3px;
 	} */
